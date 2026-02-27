@@ -1,0 +1,246 @@
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* BODY */
+/* ============================= */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 18px;   /* Increased base font */
+    line-height: 1.8;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    background: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 26px;   /* Bigger logo */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;   /* Increased nav font */
+    font-weight: 500;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+    background: #0055A4;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;   /* Large hero heading */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+.btn {
+    background: #F5A623;
+    padding: 14px 28px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #d4881c;
+}
+
+/* ============================= */
+/* FEATURES SECTION */
+/* ============================= */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 50px;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #003366;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+/* ============================= */
+/* PAGE CONTENT */
+/* ============================= */
+
+.page {
+    padding: 70px 60px;
+}
+
+.page h1 {
+    font-size: 42px;   /* Larger main headings */
+    margin-bottom: 30px;
+    color: #003366;
+    font-weight: 700;
+}
+
+.page h2 {
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.page p {
+    font-size: 20px;   /* Bigger paragraph text */
+    margin-bottom: 20px;
+}
+
+.page ul {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.page ul li {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+input, textarea {
+    padding: 14px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    font-size: 16px;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .page h1 {
+        font-size: 30px;
+    }
+
+    .page h2 {
+        font-size: 22px;
+    }
+
+    .page p,
+    .page ul li {
+        font-size: 18px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
