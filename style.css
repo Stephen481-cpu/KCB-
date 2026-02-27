@@ -1,0 +1,222 @@
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================= */
+/* TYPOGRAPHY */
+/* ============================= */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    background: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+    background: #0055A4;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* ============================= */
+/* BUTTON */
+/* ============================= */
+
+.btn {
+    background: #F5A623;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #d4881c;
+}
+
+/* ============================= */
+/* FEATURES SECTION */
+/* ============================= */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 40px;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+/* ============================= */
+/* PAGE CONTENT */
+/* ============================= */
+
+.page {
+    padding: 60px 40px;
+}
+
+.page h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.page h2 {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.page ul {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/* ============================= */
+/* FORM */
+/* ============================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .page h1 {
+        font-size: 26px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
